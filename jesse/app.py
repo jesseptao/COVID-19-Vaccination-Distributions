@@ -166,6 +166,10 @@ def conclusions():
 def further_steps():
     return render_template('further_steps.html')
 
+@app.route('/privacy-policy')
+def privacy_policy():
+    return render_template('privacy_policy.html')
+
 # route 5: accept the form submission and do something fancy with it
 # load in the form data from the incoming request
 # manipulate data into a format that we pass to our model
